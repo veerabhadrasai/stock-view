@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+}
+body {
+  position: relative;
+  background-color: black;
+  color: #fffefe;
+  font-family: Arial, sans-serif;
+}
+h1{
+  color:green;
+}
+h5{
+  color:yellow;
+}
+#data{
+  background-color: black;
+  color:white;
+  border-color: aliceblue;
+  float: none;
+}
+#invalid{
+  color: red;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#button {
+  margin-top: 29px;
+  margin-left: -82px;
+  position: absolute;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#ticker {
+  background-color: transparent;
+  box-sizing: border-box;
+  box-shadow: #fffefe;
+  box-sizing: 3px;
+  border-color: white;
+  letter-spacing: normal;
+  width: 120px;
+  color: rgb(212, 255, 0);
+  width:144px;
+  margin-left: 132px;
+  float:none;
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+    #button {
+      margin-top: 29px;
+      margin-left: -98px;
+      position: absolute;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+form{
+  align-items:center;
+  margin: 50px 50px;
+  transform: translate(-50px -50px);
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Media query for screens smaller than 768px */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
   }
-  to {
-    transform: rotate(360deg);
+  h1 {
+      font-size: 20px;
+      margin-left: 226px;
   }
+  #chart{
+      size:5px;
+  }
+  #lchart{
+      width:innerWidth - 30px
+          height=200px
+    }
+    #button {
+      margin-top: 110px;
+      margin-left: 102px;
+      position: absolute;
+  }
+  #ticker{
+      position: absolute;
+      margin-top: 77px;
+      margin-left: 67px;
+  }
+  h1 {
+      position:absolute;
+      font-size: 50px;
+      margin-left: 96px;
+      margin-top: 8px;
+  }
+  #data {
+      position: absolute;
+      background-color: transparent;
+      color: white;
+      border-color: aliceblue;
+      margin-top: 162px;
+  }
+  #lchart{
+      position: absolute;
+      margin-top: 100px;
+    }
+    
+    #graph{
+      position: absolute;
+      margin-top: 90px;
+    }
+  
 }
+/* Media query for screens larger than 1200px */
+@media (min-width: 1200px) {
+  body {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+  #ticker {
+    background-color: transparent;
+    box-sizing: border-box;
+    box-shadow: #fffefe;
+    box-sizing: 3px;
+    border-color: white;
+    letter-spacing: normal;
+    width: 120px;
+    color: rgb(212, 255, 0);
+    width:144px;
+    margin-left: 575px;
+    float: none;
+}
+}
+
